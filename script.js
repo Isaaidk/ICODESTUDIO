@@ -76,26 +76,42 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // 6. Lógica de Envío de Formulario Elegante
+    // 6. Envío real del formulario a Formspree
     const form = document.getElementById('contact-form');
     const formSuccess = document.getElementById('form-success');
     const submitBtn = document.getElementById('submit-btn');
 
-    if(form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault(); // Evita recargar la página
-            
-            // Simulación de estado de carga
-            submitBtn.innerHTML = 'Enviando... <i class="lucide lucide-loader loader-spin"></i>';
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            submitBtn.textContent = 'Enviando...';
             submitBtn.style.opacity = '0.7';
             submitBtn.disabled = true;
 
-            // Simular petición a un servidor (1.5 segundos)
-            setTimeout(() => {
-                form.classList.add('hidden');
-                formSuccess.classList.remove('hidden');
-                lucide.createIcons(); // Reinicializa iconos para la pantalla de éxito
-            }, 1500);
+            try {
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    headers: { Accept: 'application/json' },
+                    body: new FormData(form)
+                });
+
+                if (response.ok) {
+                    form.reset();
+                    form.classList.add('hidden');
+                    if (formSuccess) {
+                        formSuccess.classList.remove('hidden');
+                    }
+                    lucide.createIcons();
+                } else {
+                    throw new Error('No se pudo enviar el formulario');
+                }
+            } catch (error) {
+                submitBtn.textContent = 'Intentar de nuevo';
+                submitBtn.style.opacity = '1';
+                submitBtn.disabled = false;
+                alert('No se pudo enviar el formulario. Intenta nuevamente o escríbenos por WhatsApp.');
+            }
         });
     }
 });
