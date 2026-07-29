@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICode Studio | Ingeniería de Software Premium</title>
+    <meta name="description" content="Construimos la infraestructura tecnológica que impulsa el crecimiento de tu empresa. Desarrollo B2B y SaaS a medida.">
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Cursor Personalizado (Solo Desktop) -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Barra de progreso de lectura -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/593984847979?text=Hola%20ICode%20Studio,%20quiero%20solicitar%20una%20asesor%C3%ADa." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i data-lucide="message-circle" class="wa-icon"></i>
+    </a>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i data-lucide="code"></i></div>
+                <span class="logo-text">ICode<span>Studio</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#proceso">Proceso</a>
+                <a href="#precios">Precios</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#contacto" class="btn btn-primary hidden-mobile">Solicitar asesoría</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Menú Móvil -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#servicios" class="mobile-link">Servicios</a>
+            <a href="#proceso" class="mobile-link">Proceso</a>
+            <a href="#precios" class="mobile-link">Precios</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contacto" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem;">Solicitar asesoría</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-text reveal fade-up">
+                    <div class="badge">
+                        <span class="dot"></span> Ingeniería de Software Premium
+                    </div>
+                    <h1>Construimos la infraestructura tecnológica que <span>impulsa</span> tu crecimiento.</h1>
+                    <p>Desarrollamos sitios web, software personalizado y automatizaciones con Inteligencia Artificial para ayudarte a optimizar procesos, ahorrar tiempo y escalar tu negocio a nivel global.</p>
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn btn-primary">Solicitar asesoría <i data-lucide="arrow-right"></i></a>
+                        <a href="#servicios" class="btn btn-secondary">Ver servicios</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal fade-up delay-1">
+                    <div class="visual-bg-pattern"></div>
+                    <!-- Representación abstracta de UI/Código -->
+                    <div class="abstract-ui card-float-1">
+                        <div class="ui-icon"><i data-lucide="terminal"></i></div>
+                        <div class="ui-lines">
+                            <div class="line w-50"></div>
+                            <div class="line w-75"></div>
+                        </div>
+                        <div class="ui-status">200 OK</div>
+                    </div>
+                    <div class="abstract-ui card-float-2">
+                        <div class="ui-header">
+                            <div class="line w-50"></div>
+                            <div class="status-dot"></div>
+                        </div>
+                        <div class="ui-lines">
+                            <div class="line w-100"></div>
+                            <div class="line w-75"></div>
+                            <div class="line w-100"></div>
+                        </div>
+                    </div>
+                    <div class="abstract-ui card-float-3">
+                        <div class="ui-icon alt"><i data-lucide="bot"></i></div>
+                        <div class="ui-lines">
+                            <div class="line w-100"></div>
+                            <div class="line w-50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Métricas -->
+
+
+        <!-- Servicios -->
+<section id="servicios" class="services section bg-gray">
+            <div class="container">
+                <div class="section-header reveal fade-up">
+                    <h2>Servicios de Ingeniería Digital</h2>
+                    <p>Un ecosistema completo de soluciones diseñadas para empresas que exigen calidad, rendimiento y escalabilidad real.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal fade-up">
+                        <div class="icon-box"><i data-lucide="layout-template"></i></div>
+                        <h3>Desarrollo Web Premium</h3>
+                        <p>Sitios web corporativos ultrarrápidos, optimizados para SEO y conversiones.</p>
+                    </div>
+                    <div class="service-card reveal fade-up delay-1">
+                        <div class="icon-box"><i data-lucide="code"></i></div>
+                        <h3>Software a Medida</h3>
+                        <p>Plataformas SaaS, CRMs y ERPs diseñados para tus retos comerciales.</p>
+                    </div>
+                    <div class="service-card reveal fade-up delay-2">
+                        <div class="icon-box"><i data-lucide="bot"></i></div>
+                        <h3>Automatización con IA</h3>
+                        <p>Agentes inteligentes que reducen el trabajo manual en un 80%.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Precios -->
+        <section id="precios" class="pricing section">
+            <div class="container">
+                <div class="section-header reveal fade-up">
+                    <h2>Planes y Paquetes de Inversión</h2>
+                    <p>Soluciones claras y transparentes adaptadas a las necesidades y etapa de crecimiento de tu empresa.</p>
+                </div>
+                <div class="pricing-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    
+                    <!-- Tarjeta 1: Web Corporativa -->
+                    <div class="pricing-card service-card reveal fade-up">
+                        <div class="icon-box"><i data-lucide="layout-template"></i></div>
+                        <h3>Paquete Essencial</h3>
+                        <p>Ideal para  empresas que buscan posicionarse digitalmente con un sitio profesional y rápido.</p>
+                        <div class="price" style="font-size: 2rem; font-weight: 700; margin: 1.5rem 0; color: var(--primary-color, #2563eb);">Desde $150</div>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; text-align: left;">
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Landing page profesional</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Diseño a medida UX/UI</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Integración con Redes Sociales</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Hosting y Dominio </li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary" style="width: 100%; text-align: center;">Elegir Plan</a>
+                    </div>
+
+                    <!-- Tarjeta 2: Software a Medida (Destacada) -->
+                    <div class="pricing-card service-card reveal fade-up delay-1" style="border: 2px solid var(--primary-color, #2563eb); position: relative;">
+                        <div class="badge" style="position: absolute; top: -12px; right: 24px; background: #2563eb; color: #fff; padding: 2px 10px; font-size: 0.75rem; border-radius: 20px;">Más Popular</div>
+                        <div class="icon-box"><i data-lucide="code"></i></div>
+                        <h3>Software a Medida / SaaS</h3>
+                        <p>Para negocios que necesitan plataformas robustas, portales de clientes o sistemas complejos.</p>
+                        <div class="price" style="font-size: 2rem; font-weight: 700; margin: 1.5rem 0; color: var(--primary-color, #2563eb);">Cotización Personalizada</div>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; text-align: left;">
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Arquitectura Escalable (Cloud)</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Base de Datos Segura y API REST</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Panel de Administración Completo</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Pruebas de Calidad (QA) y CI/CD</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-primary" style="width: 100%; text-align: center;">Solicitar Propuesta</a>
+                    </div>
+
+                    <!-- Tarjeta 3: Automatización con IA -->
+                    <div class="pricing-card service-card reveal fade-up delay-2">
+                        <div class="icon-box"><i data-lucide="bot"></i></div>
+                        <h3>Automatización & IA</h3>
+                        <p>Integra agentes inteligentes y flujos automatizados para optimizar operaciones y ventas.</p>
+                        <div class="price" style="font-size: 2rem; font-weight: 700; margin: 1.5rem 0; color: var(--primary-color, #2563eb);">Desde $250</div>
+                        <ul style="list-style: none; padding: 0; margin-bottom: 2rem; text-align: left;">
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Bots de atención en WhatsApp/Web</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Conexión con CRMs y ERPs</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Reducción de tareas repetitivas</li>
+                            <li style="margin-bottom: 0.75rem;"><i data-lucide="check" style="width: 18px; margin-right: 8px; color: #10b981;"></i> Soporte y monitoreo continuo</li>
+                        </ul>
+                        <a href="#contacto" class="btn btn-secondary" style="width: 100%; text-align: center;">Elegir Plan</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto & Formulario -->
+        <section id="contacto" class="contact section">
+            <div class="container contact-grid">
+                <!-- Columna Izquierda: Texto -->
+                <div class="contact-text reveal fade-up">
+                    <h2>Empecemos a construir.</h2>
+                    <p>Completa el formulario para entender mejor tus necesidades. Agendaremos una llamada estratégica sin costo para evaluar cómo podemos ayudarte.</p>
+                    <div class="contact-direct">
+                        <div class="icon-box"><i data-lucide="message-square"></i></div>
+                        <div>
+                            <h4>Escríbenos directamente</h4>
+                            <a href="mailto:studioicode.oficial@gmail.com">studioicode.oficial@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna Derecha: Formulario Premium -->
+                <div class="form-wrapper reveal fade-up delay-1">
+                    <form id="contact-form" class="premium-form" action="https://formspree.io/f/mojgbdod" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo <span>*</span></label>
+                                <input type="text" id="name" name="name" required placeholder="Ej. Carlos Torres">
+                            </div>
+                            <div class="form-group">
+                                <label for="empresa">Empresa <span>*</span></label>
+                                <input type="text" id="empresa" name="empresa" required placeholder="Ej. Acme Corp">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo corporativo <span>*</span></label>
+                                <input type="email" id="email" name="email" required placeholder="carlos@empresa.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="+593 99 999 9999">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="Desarrollo a Medida">Desarrollo a Medida</option>
+                                <option value="Web Corporativa">Web Corporativa</option>
+                                <option value="Automatización IA">Automatización IA</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Descripción del proyecto</label>
+                            <textarea id="mensaje" name="message" rows="4" placeholder="Cuéntanos tus retos actuales..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Solicitar asesoría</button>
+                    </form>
+                    
+                    <div id="form-success" class="form-success hidden">
+                        <i data-lucide="check-circle"></i>
+                        <h3>Solicitud enviada</h3>
+                        <p>Nos comunicaremos contigo en menos de 2 horas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+            
+    <!-- Footer minimalista -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo-icon"><i data-lucide="code"></i></div>
+                <span class="logo-text">ICode<span>Studio</span></span>
+            </div>
+            <p>© 2026 ICode Studio. B2B Software Engineering.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
